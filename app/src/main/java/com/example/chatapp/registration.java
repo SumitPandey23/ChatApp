@@ -122,10 +122,10 @@ public class registration extends AppCompatActivity {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
                                                                 if(task.isSuccessful()){
-                                                                   /* SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+                                                                    SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
                                                                     SharedPreferences.Editor editor = sharedPreferences.edit();
                                                                     editor.putString("name","true");
-                                                                    editor.apply();*/
+                                                                    editor.apply();
                                                                     progressDialog.show();
                                                                     Intent intent = new Intent(registration.this,MainActivity.class);
                                                                     startActivity(intent);
